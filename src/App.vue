@@ -1,19 +1,26 @@
 <template>
     <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-        <p>testfeafeaf </p>
+        <pipeline/>
     </div>
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
+  import Pipeline from '@/components/PipelineComponents/Pipeline'
+
+  let curLinedUnitCount = 10
 
   export default {
     name: 'App',
-
+    data () {
+      return {
+        count: curLinedUnitCount
+      }
+    },
     components: {
-      HelloWorld
+      Pipeline
+    },
+    methods: {
+
     }
   }
 </script>
